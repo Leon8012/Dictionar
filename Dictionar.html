@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>DICTIONARY</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card text-center">
+        <h1>This is my dictionary</h1>
+        <form>
+          <div class="form-group">
+            <label >Enter a word in the dictionary</label>
+            <div class="conteiner">
+              <input type="txt" class="form-control-center" id="ad_word">
+            </div>
+          </div>
+          <pre class="tab"></pre>
+          <button class="btn btn-primary " onclick="return add()"> Add</button>
+          <pre class="tab"></pre>          
+          <div class="form-group">
+            <label >Look for a word</label>
+            <div class="conteiner">
+              <input type="txt" class="form-control-center" id="search_word">
+            </div>
+          </div>
+          <pre class="tab"></pre>
+          <button type="submit" class="btn btn-primary" onclick="return search()">Search</button>
+          <pre class="tab"></pre>
+          <div class="card">
+            <div class="card-body">              
+              <div class="card-body">
+                <img src="imag//img1.png" width="150" class="card-img-center">
+                <div style="font-size:200%;" id="message">                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>  
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <script src="dictionar.js"></script>    
+  </body>
+</html>
