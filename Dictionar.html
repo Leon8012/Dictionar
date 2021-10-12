@@ -15,31 +15,28 @@
       <div class="card text-center">
         <h1>This is my dictionary</h1>
         <form>
-          <div class="form-group">
-            <label >Enter a word in the dictionary</label>
+          <div class="mb-2">
+            <label class="form-label" >Enter a word in the dictionary</label>
             <div class="conteiner">
               <input type="txt" class="form-control-center" id="ad_word">
             </div>
           </div>
-          <pre class="tab"></pre>
-          <button class="btn btn-primary " onclick="return add()"> Add</button>
-          <pre class="tab"></pre>          
-          <div class="form-group">
-            <label >Look for a word</label>
+          <button class="btn btn-primary " onclick="return add()"> Add </button>
+          <div class="mb-2">
+            <label class="form-label"> Look for a word </label>
             <div class="conteiner">
               <input type="txt" class="form-control-center" id="search_word">
             </div>
           </div>
-          <pre class="tab"></pre>
-          <button type="submit" class="btn btn-primary" onclick="return search()">Search</button>
-          <pre class="tab"></pre>
+          <button type="submit" class="btn btn-primary" onclick="return search()">Search</button>          
           <div class="card">
-            <div class="card-body">              
-              <div class="card-body">
-                <img src="imag//img1.png" width="150" class="card-img-center">
-                <div style="font-size:200%;" id="message">                  
-                </div>
-              </div>
+             <div id="dictionary"></div>            
+          </div>
+          <button type="submit" class="btn btn-primary" onclick="return dictionary()">list of words</button>
+          <div class="card">
+            <div class="card-body">
+                <img src="imag//img1.png" width="200" class="card-img-center">
+                <div style="font-size:200%;" id="message"></div>
             </div>
           </div>
         </form>
